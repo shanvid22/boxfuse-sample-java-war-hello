@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+	
+	    tools {
+        maven "mvn"
+    }
+
+    environment {
+        GIT_REPO = 'https://github.com/shanvid22/boxfuse-sample-java-war-hello.git'
+        BRANCH = 'master'
+        BUILD_TOOL = 'mvn'
+        TOMCAT_PATH = '/opt/tomcat/webapps'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                git branch: "${BRANCH}", url: "${GIT_REPO}"
+            }
+        }
+
+        stage('Build') {
+            steps {
+                sh "${BUILD_TOOL} clean package"
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                script {
+                    sh "cp -r /var/lib/jenkins/workspace/pipeline1/target/*.war ${TOMCAT_PATH}/"
+                }
+            }
+        }
+    }
+    post {
+        success {
+            echo 'Deployment Successful!'
+        }
+        failure {
+            echo 'Deployment Failed!'
+        }
+    }
+}
