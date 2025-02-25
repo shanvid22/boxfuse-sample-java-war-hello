@@ -4,7 +4,7 @@
 </head>
 <body style="text-align: center">
 <h1>Congratulations! This is Sandeep</h1>
-<img src="boxfuse.png">
+<img src="IMG_3377.jpg">
 
 <h2>You have successfully launched your Instance!</h2>
 
