@@ -19,18 +19,18 @@
 <% if("virtualbox".equals(System.getenv("BOXFUSE_PLATFORM_ID"))) { %>
 <h2 style="margin-top: 60px">Next steps</h2>
 
-<p style="margin-bottom: 20px;">
+<p style="margin-bottom: 10px;">
     Display the Instance console:<br/>
     <strong>boxfuse logs <%= System.getenv("BOXFUSE_INSTANCE_ID") %>
     </strong>
 </p>
 
-<p style="margin-bottom: 20px;">
+<p style="margin-bottom: 10px;">
     List all running Instances:<br/>
     <strong>boxfuse ps</strong>
 </p>
 
-<P style="margin-bottom: 20px;">
+<P style="margin-bottom: 10px;">
     List all Bootable Apps:<br/>
     <strong>boxfuse ls</strong>
 </p>
@@ -47,7 +47,7 @@
     </strong>
 </p>
 <% } else { %>
-<h2 style="margin-top: 80px">Now it's your turn!</h2>
+<h2 style="margin-top: 60px">Now it's your turn!</h2>
 
 <p>Check out <strong><a href="https://github.com/boxfuse/boxfuse-sample-java-war-hello">this app</a></strong> from GitHub, modify it, and give it version 2.<br/>You are now ready to fuse and <strong>deploy it with zero downtime</strong> using the commands you already know.</p>
 
