@@ -17,7 +17,7 @@
 </strong></p>
 
 <% if("virtualbox".equals(System.getenv("BOXFUSE_PLATFORM_ID"))) { %>
-<h2 style="margin-top: 60px">Next steps</h2>
+<h2 style="margin-top: 30px">Next steps</h2>
 
 <p style="margin-bottom: 10px;">
     Display the Instance console:<br/>
@@ -47,7 +47,7 @@
     </strong>
 </p>
 <% } else { %>
-<h2 style="margin-top: 60px">Now it's your turn!</h2>
+<h2 style="margin-top: 30px">Now it's your turn!</h2>
 
 <p>Check out <strong><a href="https://github.com/boxfuse/boxfuse-sample-java-war-hello">this app</a></strong> from GitHub, modify it, and give it version 2.<br/>You are now ready to fuse and <strong>deploy it with zero downtime</strong> using the commands you already know.</p>
 
