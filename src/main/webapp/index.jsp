@@ -17,7 +17,7 @@
 </strong></p>
 
 <% if("virtualbox".equals(System.getenv("BOXFUSE_PLATFORM_ID"))) { %>
-<h2 style="margin-top: 80px">Next steps</h2>
+<h2 style="margin-top: 60px">Next steps</h2>
 
 <p style="margin-bottom: 20px;">
     Display the Instance console:<br/>
